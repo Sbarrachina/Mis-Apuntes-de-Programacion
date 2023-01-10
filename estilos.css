@@ -1,0 +1,213 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bkg: linear-gradient(to top, #0f0915, #050307);
+  --dark: #050307;
+  --text: #f9f6fe;
+  --accent: #4233e4;
+  --primary-color: #333;
+  --secondary-color: #444;
+  --alt-color:#26dc60;
+  --overlay: rgba(0,0,0,0.8);
+  --container-width: 90vw;
+ 
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: clamp(1.1rem, 2vw + 1rem, 1.4rem);
+  line-height: 1.55;
+  background: var(--bkg);
+  color: var(--text);
+  background-image: url("Fotos/fondo-abstracto-blanco-minimalista_23-2148816119.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+
+}
+.Banner1 {
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  }
+
+nav {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  padding-block: 1.2rem;
+  background-color: black;
+  transition: background-color 800ms cubic-bezier(0.64, 0.04, 0.26, 0.87);
+
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.nav-link:focus-visible {
+  outline: 4px solid var(--accent);
+  outline-offset: 0.2em;
+  border-radius: 0.5rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  transform: translate3d(0, -200%, 0);
+  position: absolute;
+  z-index: -1;
+  top: 3rem;
+  left: 0;
+  right: 0;
+  background-color: var(--dark);
+  padding: 1.5rem;
+  border-bottom: 4px solid var(--accent);
+  text-align: center;
+}
+
+.nav-container ul li a:hover{
+  color: rgb(34, 215, 14);
+}
+
+
+.btn {
+  color: var(--text);
+  text-decoration: none;
+  padding: 0.3rem 1.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+
+
+.btn--menu {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  display: grid;
+  place-items: center;
+  padding-inline: 1rem;
+  transition: transform 0.3s cubic-bezier(0.64, 0.04, 0.26, 0.87);
+}
+
+li[role="none"],
+.nav-link {
+  width: 100%;
+  display: block;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.btn--menu[aria-expanded="true"] {
+  transform: rotate(-180deg);
+}
+
+.btn--menu[aria-expanded="true"] + .nav-links {
+  transform: translate3d(0, 0, 0);
+}
+
+@media (min-width: 768px) {
+  .btn--menu {
+    display: none;
+  }
+  .nav-links {
+    position: static;
+    transform: translate3d(0, 0, 0);
+    flex-direction: row;
+    border: 0;
+    z-index: 0;
+    padding: 0;
+    inset: 0;
+    background-color: transparent;
+  }
+  li[role="none"],
+  .nav-link {
+    width: initial;
+  }
+}
+/* presentacion */
+
+.Presentacion{
+  width: 300px;
+  border: 3px solid #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  background-color: #afdebe;
+}
+
+.card__image {
+  width: 250px;
+  border-radius: 50%;
+  margin: 10px;
+
+}
+.card__name{
+font-size:35px ;
+color: #000;
+
+}    
+.card__profession{
+  font-size: 20px;
+  color: #000;
+
+}
+
+.texto_bienvenida{
+  font-size:25px;
+  text-align:left;
+  margin:5%;
+  color: #000;
+
+}
+
+
+/* footer */
+.footer{
+  background-color: #000;
+  color: #fff;
+  padding: 4rem 0;
+  width: 100%;
+}
+
+.footer .container{
+  display: flex;
+  justify-content: center;
+}
+
+.social-media .fab{
+  margin-right: 20px;
+  font-size: 1em;
+  color:var(--alt-color)
+}
+.social-media .fab:hover{
+  color: var(--primary-color);
+}
+.social-media h2{
+  font-size: 1.5rem;
+}
+
+
+.info a:hover{
+ color: var(--primary-color);
+}
+.blog a:hover{
+ color: var(--primary-color);
+}
+
+
+
