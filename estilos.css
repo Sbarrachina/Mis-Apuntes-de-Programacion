@@ -209,5 +209,136 @@ color: #000;
  color: var(--primary-color);
 }
 
+/* pagina HTML Y CSS */
+
+.container-cards{
+display: flex;
+flex-direction: row;
 
 
+}
+.apuntes_html{
+  font-size:25px;
+  text-align:left;
+  margin:5%;
+  color: #000;
+  
+}
+.card_html{
+    width: 100%;
+    }
+
+.links_pdf-1{
+    font-size: 25px;
+    background-color: #afdebe;
+    width: 400px;
+    margin-left: 100px;
+    margin-right: auto;
+    margin-top: em;
+    margin-bottom: 3em;
+    padding: 0.8rem;
+    text-align: left;
+    
+
+}
+.links_pdf-1 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.links_pdf-1 a:hover{
+  color: #dc5426;
+}
+
+.card_html2{
+    width: 100%;
+    }
+
+.links_pdf-2{
+    font-size: 25px;
+    background-color: #afdebe;
+    width: 400px;
+    margin-left: 100px;
+    margin-right: auto;
+    margin-top: em;
+    margin-bottom: 3em;
+    padding: 0.8rem;
+    text-align: left;
+
+}
+.links_pdf-2 a{
+  text-decoration: none;
+  color: #000;
+}
+.links_pdf-2 a:hover{
+  color: #dc5426;
+
+}
+
+.card_html3{
+    width: 100%;
+    }
+
+.links_Recursos{
+    font-size: 25px;
+    background-color: #afdebe;
+    width: 400px;
+    margin-left: 100px;
+    margin-right: auto;
+    margin-top: em;
+    margin-bottom: 3em;
+    padding: 0.8rem;
+    text-align: left;
+
+}
+
+.links_Recursos a{
+text-decoration: none;
+color: #000;
+
+}
+
+.links_Recursos a:hover{
+  color: #dc5426;
+
+}
+
+hr{
+  margin-top: 10px;
+}
+@media (max-width:750px){
+  .container-cards{
+    display: flex;
+    flex-direction: column;
+    }
+    
+    
+    
+    .links_pdf-1{
+        font-size: 22px; 
+        width: 100%;
+        margin-left: 0;
+       
+    
+    }
+    .card_html2{
+        width: 100%;
+        }
+    
+    .links_pdf-2{
+        font-size: 22px;
+        width: 100%;
+        margin-left: 0px;
+   
+    
+    }
+    
+    
+    .links_Recursos{
+        font-size: 22px;
+        width: 100%;
+        margin-left: 0px;
+       
+    
+    }
+}
