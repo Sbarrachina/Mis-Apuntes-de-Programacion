@@ -410,6 +410,7 @@ color: #000;
 text-decoration: none;
 color: #000;
 
+
 }
 .box_Katas a:hover{
 color: #dc5426;
@@ -419,7 +420,7 @@ color: #dc5426;
 font-size: 25px;
 width: 42%;
 margin-right: auto;
-margin-top: em;
+margin-top: 1em;
 margin-bottom: 3em;
 padding: 0.8rem;
 text-align: left;
@@ -527,3 +528,101 @@ color: #000;
      flex-direction: column;
   }
 }
+
+/* pagina java */
+
+.container-content {
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.table {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+
+}
+
+.table caption {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 8px 0px;
+
+}
+
+.table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  
+}
+
+.table th, .table td {
+  font-size: 16px;
+  padding: 8px;
+  text-align: left;
+  
+  
+}
+.table td a{
+  text-decoration: none;
+  color: #000;
+}
+
+.table thead th{ 
+  text-transform: uppercase;
+  background-color: rgb(10, 9, 9);
+  color: #fff;
+  
+}
+
+.table tbody tr:hover {
+  background-color: rgba(229, 19, 19, 0.2);
+}
+
+.table tbody td:hover {
+  background-color: rgba(229, 19, 19, 0.3);
+}
+
+@media screen and (max-width: 600px) {
+  .table {
+      border: 0px;
+  }
+  .table caption {
+      font-size: 22px;
+  }
+  .table thead {
+      display: none;
+  }
+  .table tr {
+      margin-bottom: 8px;
+      border-bottom: 4px solid #ddd;
+      display: block;
+  }
+  .table th, .table td {
+      font-size: 12px;
+  }
+  .table td {
+      display: block;
+      border-bottom: 1px solid #ddd;
+      text-align: right;
+  }
+  .table  td:last-child {
+      border-bottom: 0px;
+  }
+  .table td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      text-transform: uppercase;
+      float: left;
+  }
+}
+
+/* tabla dos */
+
+
+
