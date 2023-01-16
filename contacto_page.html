@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sbarrachina Apuntes</title>
+    <title>Página Contacto</title>
     <link rel="stylesheet" href="estilos.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +22,7 @@
   <header>
 
     <div class="BannerInicio">
-      <img class="Banner1" src="Fotos/Banner.png" alt="fotoBannerInicio">
+      <img class="Banner1" src="Fotos/banner_Contacto.png" alt="fotoBannerInicio">
   </div>
 
     <nav>
@@ -50,7 +50,7 @@
               </li>
 
               <li role="none">
-                <a role="menuitem" href="java_page.html" class="nav-link btn">JAVA</a>
+                <a role="menuitem" href="/java_page.html" class="nav-link btn">JAVA</a>
               </li>
 
               <li role="none">
@@ -68,27 +68,35 @@
     </header>
 
 <main>
+      
+    </div>
 
-  <div class="Presentacion">
-    <img class="card__image" alt="Sandra Barrachina" src="Fotos/ifoto.jpeg">
-    <span class="card__name">SANDRA BARRACHINA </span><span class="card__profession">Front End Developer</span>
+
+
+   <!-- contacto page -->
+
+<div class="contact-col">
+
+  <form action="https://formspree.io/f/mpzbokrb" method="post" id="contacto">
+      <div class="div">
+          <h2 class="contacto-text">CONTACTO </h2>
+
+      </div>
+
+      <input type="text" name="name" placeholder="introduce Nombre
+      " required>
+      <input type="email" name="email" placeholder="Introduce Email
+      " required>
+      <input type="text" name="subject" placeholder="Introduce Asunto" required>
+      <textarea  rows="8" name="message"  placeholder="Introduce Mensaje" required></textarea>
+      <button type="submit" class="btn site-btn2 px-4 py-3 mr-4 btn-light" id="boton">Enviar Mensaje</button>
+
+
+  </form>
+
 </div>
 
-<div class="texto_bienvenida">
 
-
-    <p>
-        Página creada para recopilar lo que aprendí en un Bootcamp de Programación y desarrollo
-        web, asi como de forma autodidacta <br>
-        Encontraréis toda la información desglosada así como los ejercicios, Katas y proyectos que he ido
-         realizando. <br><br>
-
-        Un apoyo en forma de página web para organizar mis conocimientos <br> <br>
-
-        Bienvemidos/as Coders
-    </p>
-
-</div>
 
 
 </main>
