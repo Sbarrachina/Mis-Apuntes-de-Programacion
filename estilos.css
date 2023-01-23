@@ -781,6 +781,7 @@ form{
     color: #000;
 }
 
+
 .fotos_proyectos-1{
   display: flex;
   flex-direction: row;
@@ -801,6 +802,8 @@ text-align: center;
   padding: 50px;
   font-size: 60px;
 }
+
+
 
 @media (max-width:750px){
   .fotos_proyectos-1{
