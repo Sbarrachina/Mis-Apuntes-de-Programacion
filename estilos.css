@@ -823,3 +823,100 @@ text-align: center;
   margin: 0 auto;
   margin-top: 100px;
 }
+
+
+/* formación  */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Ajusta la alineación horizontal según tus necesidades */
+}
+
+.campus-col-web {
+  flex-basis: calc(50% - 20px); /* Ajusta el ancho de cada columna según tus necesidades */
+  margin-bottom: 20px;
+}
+
+.box-container-w {
+  margin-bottom: 100px;
+  padding: 20px;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.box-container-w .box-w {
+  flex: 1 1 50%; /* Ajusta el ancho de cada caja según tus necesidades */
+  border-radius: .5rem;
+  background: #fff;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  border: .1rem solid rgba(0, 0, 0, .2);
+  text-align: center;
+  padding: 2rem;
+  
+  transition: transform 0.3s ease;
+  min-height: 300px; /* Ajusta la altura mínima de las cajas según tus necesidades */
+}
+
+.box-container-w .box-w:hover {
+  transform: scale(1.1); /* Escala la caja al 110% */
+}
+
+.box-container-w .box-w h3 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+
+}
+
+.box-container-w .box-w p {
+  font-size: 20px;
+  color: #666;
+  padding: .5rem 0;
+  line-height: 1.5;
+  text-align:left;
+}
+
+.campus-col-web {
+  flex-basis: 50%; /* Ajusta el ancho de cada columna según tus necesidades */
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.campus-col-web img {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+#boton-apuntes{
+background-color: #000;
+margin-top: 50px;
+margin-bottom: 20px;
+
+}
+
+#boton-apuntes:hover{
+  background-color: var(--alt-color);
+  
+  }
+
+
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  
+  .campus-col-web {
+    flex-basis: 100%;
+  }
+}
